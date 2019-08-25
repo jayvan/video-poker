@@ -54,11 +54,11 @@ public struct Card {
     public static Card KING_SPADES = new Card(Rank.King, Suit.Spade);
     public static Card ACE_SPADES = new Card(Rank.Ace, Suit.Spade);
     
-    public Suit suit;
-    public Rank rank;
+    public Suit Suit;
+    public Rank Rank;
 
     public Card(Rank rank, Suit suit) {
-        this.rank = rank;
-        this.suit = suit;
+        this.Rank = rank;
+        this.Suit = suit;
     }
 }

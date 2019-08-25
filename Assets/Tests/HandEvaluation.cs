@@ -19,18 +19,18 @@ namespace Tests {
             Rank.Ace, Suit.Heart,
             TestName = "DisparateCardsAreNothing")]
         [TestCase(HandResult.Nothing,
-            Rank.Five, Suit.Club,
+            Rank.Three, Suit.Club,
             Rank.Two, Suit.Heart,
-            Rank.Five, Suit.Spade,
+            Rank.Nine, Suit.Spade,
             Rank.Seven, Suit.Diamond,
-            Rank.Five, Suit.Heart,
+            Rank.Three, Suit.Heart,
             TestName = "PairOfThreesIsNothing")]
         [TestCase(HandResult.Nothing,
             Rank.Five, Suit.Club,
             Rank.Two, Suit.Heart,
             Rank.Five, Suit.Spade,
             Rank.Seven, Suit.Diamond,
-            Rank.Five, Suit.Heart,
+            Rank.Nine, Suit.Heart,
             TestName = "PairOfFivesIsNothing")]
         [TestCase(HandResult.Nothing,
             Rank.Ten, Suit.Club,
@@ -162,7 +162,7 @@ namespace Tests {
             Rank.Ace, Suit.Heart,
             Rank.Ace, Suit.Diamond,
             Rank.Three, Suit.Heart,
-            Rank.Ace, Suit.Clthubub,
+            Rank.Ace, Suit.Club,
             Rank.Ace, Suit.Spade,
             TestName = "FourAcesIsFourOfKind")]
         [TestCase(HandResult.StraightFlush,

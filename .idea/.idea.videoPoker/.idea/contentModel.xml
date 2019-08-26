@@ -14,6 +14,10 @@
         </e>
         <e p="Scripts" t="Include">
           <e p="Model" t="Include">
+            <e p="Analysis" t="Include">
+              <e p="CombinationCalculator.cs" t="Include" />
+              <e p="RoyalFlushCombinationCalculator.cs" t="Include" />
+            </e>
             <e p="Core" t="Include">
               <e p="Card.cs" t="Include" />
               <e p="HandResult.cs" t="Include" />
@@ -25,6 +29,7 @@
         </e>
         <e p="Tests" t="Include">
           <e p="HandEvaluation.cs" t="Include" />
+          <e p="RoyalFlushCombinationCounterTest.cs" t="Include" />
         </e>
       </e>
       <e p="Library" t="ExcludeRecursive" />

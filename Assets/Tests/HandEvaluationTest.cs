@@ -3,7 +3,7 @@ using Model;
 using NUnit.Framework;
 
 namespace Tests {
-    public class HandEvaluation {
+    public class HandEvaluationTest {
         private HandEvaluator evaluator = new HandEvaluator();
         
         [TestCase(HandResult.Nothing,

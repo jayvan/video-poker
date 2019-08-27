@@ -6,7 +6,6 @@ namespace Model {
     public class HandEvaluator {
         Dictionary<Rank, int> rankCount = new Dictionary<Rank, int>(5);
         Dictionary<Suit, int> suitCount = new Dictionary<Suit, int>(4);
-
         
         public HandEvaluator() {
         }

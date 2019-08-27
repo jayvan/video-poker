@@ -72,7 +72,8 @@ namespace Tests {
         public void EvaluationDoesNotAllocate() {
             Card[] held = {Card.KING_CLUBS, Card.JACK_CLUBS, Card.QUEEN_CLUBS, Card.TEN_CLUBS};
             Card[] discarded = {Card.ACE_CLUBS};
-            
+
+            GC.Collect();
             long initialAllocation = GC.GetTotalMemory(false);
 
             for (int i = 0; i < 100; i++) {

@@ -4,12 +4,7 @@ using NUnit.Framework;
 
 namespace Tests {
     public class HandEvaluation {
-        private HandEvaluator evaluator;
-
-        [SetUp]
-        public void SetUp() {
-            this.evaluator = new HandEvaluator();
-        }
+        private HandEvaluator evaluator = new HandEvaluator();
         
         [TestCase(HandResult.Nothing,
             Rank.Two, Suit.Heart,
@@ -220,6 +215,7 @@ namespace Tests {
                 new Card(Rank.Ace, Suit.Heart)
             };
 
+            GC.Collect();
             long initialAllocation = GC.GetTotalMemory(false);
 
             for (int i = 0; i < 100; i++) {

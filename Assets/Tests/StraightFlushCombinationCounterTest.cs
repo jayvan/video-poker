@@ -30,6 +30,14 @@ namespace Tests {
         }
         
         [Test]
+        public void AllAvailableForThreeSevenAvailableForOne() {
+            // King-high clubs is out, but Diamond, heart, spade can each do six through king high (8*3 = 24)
+            Card[] held = {};
+            Card[] discarded = {Card.ACE_CLUBS, Card.ACE_DIAMONDS, Card.ACE_HEARTS, Card.ACE_SPADES, Card.KING_CLUBS};
+            Assert.AreEqual(31, this.calculator.Combinations(held, discarded));
+        }
+        
+        [Test]
         public void KeepingOneMiddleCardLeavesFive() {
             // Seven through jack high straight flushes are all possible
             Card[] held = {Card.SEVEN_HEARTS};

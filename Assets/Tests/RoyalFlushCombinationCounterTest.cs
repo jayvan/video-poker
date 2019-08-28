@@ -32,7 +32,14 @@ namespace Tests {
             Card[] discarded = {Card.ACE_HEARTS, Card.KING_CLUBS, Card.JACK_DIAMONDS, Card.QUEEN_SPADES, Card.TWO_CLUBS};
             Assert.AreEqual(0, this.calculator.Combinations(held, discarded));
         }
-        
+
+        [Test]
+        public void DiscardingAllRoyalOfOneSuitHasNoChance() {
+            Card[] held = { };
+            Card[] discarded = {Card.ACE_CLUBS, Card.ACE_DIAMONDS, Card.ACE_HEARTS, Card.ACE_SPADES, Card.TWO_CLUBS};
+            Assert.AreEqual(0, this.calculator.Combinations(held, discarded));
+        }
+
         [Test]
         public void AllAvailableHasFourCombinations() {
             Card[] held = {};
